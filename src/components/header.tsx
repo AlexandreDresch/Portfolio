@@ -36,9 +36,9 @@ export default function Header() {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a href="#hero" className="flex items-center w-[16rem] xl:mr-8">
+        <a href="#hero" className="flex items-center w-[16rem] xl:mr-8 gap-1">
           <img src={logo} alt="Home" width={40} />
-          <span className="font-code font-black">Build your Dreams</span>
+          <span className="font-code font-black">Alexandre's Portfolio</span>
         </a>
 
         <nav
