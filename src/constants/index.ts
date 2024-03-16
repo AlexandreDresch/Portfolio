@@ -1,7 +1,7 @@
 export const navigation = [
     {
       id: "0",
-      title: "About",
+      title: "About me",
       url: "#about",
     },
     {
