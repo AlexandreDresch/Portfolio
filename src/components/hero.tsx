@@ -141,7 +141,7 @@ export default function Hero() {
                   src={language}
                   alt="Language"
                   className="rounded-md"
-                  width={72}
+                  width={width < 1248 ? 52 : 72}
                   height={36}
                 />
               </li>
