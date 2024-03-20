@@ -136,7 +136,7 @@ export default function Hero() {
 
           <ul className="flex">
             {languages.map((language, index) => (
-              <li className="flex items-center justify-center flex-1 h-[8.5rem" key={index}>
+              <li className="flex items-center justify-center flex-1 h-[8.5rem]" key={index}>
                 <img
                   src={language}
                   alt="Language"
