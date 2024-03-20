@@ -19,6 +19,13 @@ import redis from "../assets/languages/redis-plain-wordmark.svg";
 import postgresql from "../assets/languages/postgresql-plain-wordmark.svg";
 import nestjs from "../assets/languages/nestjs-plain-wordmark.svg";
 
+import icon1 from "../assets/projects/icon-1.svg";
+import icon2 from "../assets/projects/icon-2.svg";
+
+import brain from "../assets/brain.svg";
+import linkedin from "../assets/linkedin.svg";
+import github from "../assets/github.svg";
+
 export const navigation = [
   {
     id: "0",
@@ -72,4 +79,76 @@ export const languages = [
   postgresql,
   tailwindcss,
   threejs,
+];
+
+export const projectsBackend = [
+  {
+    id: "0",
+    title: "Ask anything",
+    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    backgroundUrl: "./src/assets/projects/card-1.svg",
+    iconUrl: icon1,
+    light: true,
+  },
+  {
+    id: "1",
+    title: "Data Management System",
+    text: "A robust system for managing and processing large volumes of data efficiently.",
+    backgroundUrl: "./src/assets/projects/card-2.svg",
+    iconUrl: icon2,
+  },
+  {
+    id: "2",
+    title: "Authentication Service",
+    text: "Secure authentication service for ensuring user identity and access control.",
+    backgroundUrl: "./src/assets/projects/card-3.svg",
+    iconUrl: icon1,
+  },
+  {
+    id: "3",
+    title: "Real-time Analytics Engine",
+    text: "Provides instant insights and analysis of data streams for informed decision-making.",
+    backgroundUrl: "./src/assets/projects/card-4.svg",
+    iconUrl: icon2,
+    light: true,
+  },
+  {
+    id: "4",
+    title: "Scalable API Gateway",
+    text: "Efficiently manage and route API requests to backend services at scale.",
+    backgroundUrl: "./src/assets/projects/card-5.svg",
+    iconUrl: icon1,
+  },
+  {
+    id: "5",
+    title: "Automated Testing Framework",
+    text: "Streamlines the testing process, ensuring robustness and reliability of backend services.",
+    backgroundUrl: "./src/assets/projects/card-6.svg",
+    iconUrl: icon2,
+    light: true,
+  },
+];
+
+const aboutText =
+  "With a strong foundation in Node.js, JavaScript, TypeScript, React.js, and Next.js. I am eager to learn and passionate about developing web applications that are both functional and user-friendly.";
+
+export const aboutContent = [
+  {
+    id: "0",
+    title: "I am a FullStack Developer",
+    text: aboutText,
+    iconUrl: brain,
+  },
+  {
+    id: "1",
+    title: "LinkedIn",
+    iconUrl: linkedin,
+    link: "https://www.linkedin.com/in/alexandre-dresch/"
+  },
+  {
+    id: "2",
+    title: "GitHub",
+    iconUrl: github,
+    link: "https://www.github.com/AlexandreDresch"
+  },
 ];
