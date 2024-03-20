@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import {disablePageScroll, enablePageScroll} from "scroll-lock";
 
-import logo from "../assets/logo.svg";
 import { navigation } from "../constants";
 import Button from "./button";
 import MenuSvg from "../assets/svg/menu-svg";
@@ -36,9 +35,10 @@ export default function Header() {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a href="#hero" className="flex items-center w-[16rem] xl:mr-8 gap-1">
-          <img src={logo} alt="Home" width={40} />
-          <span className="font-code font-black">Alexandre's Portfolio</span>
+        <a href="#hero" className="flex items-center w-[16rem] xl:mr-8 gap-1 font-code font-black">
+          <span className="text-color-1 text-xl">{"<"}</span>
+          <span>Alexandre's Portfolio</span>
+          <span className=" text-color-1 text-xl">{"/>"}</span>
         </a>
 
         <nav
