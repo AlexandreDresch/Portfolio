@@ -1,9 +1,13 @@
-import { aboutContent } from "../constants";
+import { aboutApps, aboutContent } from "../constants";
 import Section from "./section";
 
 import brain from "../assets/brain-white.svg";
+import { LeftCurve, RightCurve } from "./design/about";
+import { useWindowDimensions } from "../hooks/useWindowDimensions";
 
 export default function About() {
+  const { width } = useWindowDimensions();
+
   function openInNewTab(url: string) {
     window.open(url, "_blank");
   }
@@ -52,7 +56,7 @@ export default function About() {
                   </div>
 
                   {item.text && (
-                    <p className="body-2 mt-3 ml-11 text-n-4">{item.text}</p>
+                    <p className="body-2 mt-3 ml-11 text-n-4 max-w-[19rem]">{item.text}</p>
                   )}
                 </li>
               )
@@ -61,14 +65,45 @@ export default function About() {
         </div>
 
         <div className="lg:ml-auto xl:w-[38rem]">
-          <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-75 md:scale-100">
+          <div className="relative mt-4 left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-75 md:scale-100">
             <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
-                    <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
-                        <div>
-                            <img src={brain} width={48} alt="Brain" />
-                        </div>
-                    </div>
+              <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
+                <div className="flex items-center justify-center h-full bg-n-8 rounded-full">
+                  <img src={brain} width={48} height={48} alt="Brain" />
+                </div>
+              </div>
             </div>
+
+            <ul>
+              {aboutApps.map((app, index) => (
+                <li
+                  key={app.id}
+                  className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${
+                    index * 45
+                  }`}
+                >
+                  <div
+                    className={`relative -top-[1.6rem] flex size-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${
+                      index * 45
+                    }`}
+                  >
+                    <img
+                      src={app.icon}
+                      alt={app.title}
+                      width={app.width}
+                      height={app.height}
+                      className="rounded-md m-auto"
+                    />
+                  </div>
+                </li>
+              ))}
+            </ul>
+
+            <LeftCurve />
+
+            {
+              width > 1518 && <RightCurve />
+            }
           </div>
         </div>
       </div>
