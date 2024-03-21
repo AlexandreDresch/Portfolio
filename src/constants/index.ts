@@ -152,3 +152,62 @@ export const aboutContent = [
     link: "https://www.github.com/AlexandreDresch"
   },
 ];
+
+export const aboutApps = [
+  {
+    id: "0",
+    title: "NextJs",
+    icon: nextjs,
+    width: 26,
+    height: 36,
+  },
+  {
+    id: "1",
+    title: "JavaScript",
+    icon: javascript,
+    width: 34,
+    height: 36,
+  },
+  {
+    id: "2",
+    title: "TypeScript",
+    icon: typescript,
+    width: 36,
+    height: 28,
+  },
+  {
+    id: "3",
+    title: "ReactJs",
+    icon: reactjs,
+    width: 34,
+    height: 35,
+  },
+  {
+    id: "4",
+    title: "NestJs",
+    icon: nestjs,
+    width: 34,
+    height: 34,
+  },
+  {
+    id: "5",
+    title: "PostgreSQL",
+    icon: postgresql,
+    width: 34,
+    height: 34,
+  },
+  {
+    id: "6",
+    title: "MongoDB",
+    icon: mongodb,
+    width: 26,
+    height: 34,
+  },
+  {
+    id: "7",
+    title: "SpringBoot",
+    icon: springboot,
+    width: 38,
+    height: 32,
+  },
+];
