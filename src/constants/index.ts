@@ -50,13 +50,13 @@ export const navigation = [
   {
     id: "4",
     title: "Download CV",
-    url: "#cv",
+    url: "#resume",
     onlyMobile: true,
   },
   {
     id: "5",
     title: "Contact me",
-    url: "#contact",
+    url: "#about",
     onlyMobile: true,
   },
 ];
@@ -209,5 +209,28 @@ export const aboutApps = [
     icon: springboot,
     width: 38,
     height: 32,
+  },
+];
+
+export const resume = [
+  {
+    id: "0",
+    title: "Português",
+    description: "Habilidades, experiências, projetos e educação",
+    features: [
+      "Linguagens, frameworks, bancos de dados, ferramentas e práticas",
+      "Descrição de projetos, responsabilidades e realizações",
+      "Onde estudei, o que estudei e em que intervalo de tempo",
+    ],
+  },
+  {
+    id: "1",
+    title: "English",
+    description: "Skills, experiences, projects, and education",
+    features: [
+      "Languages, frameworks, databases, tools, and practices",
+      "Project descriptions, responsibilities, and achievements",
+      "Where I studied, what I studied, and over what period of time",
+      ],
   },
 ];
