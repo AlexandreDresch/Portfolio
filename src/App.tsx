@@ -3,6 +3,7 @@ import Header from "./components/header";
 import Hero from "./components/hero";
 import BackendProjects from "./components/backend-projects";
 import About from "./components/about";
+import Resume from "./components/resume";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         </div>
 
         <About />
+        <Resume />
       </div>
 
       <ButtonGradient />
