@@ -67,13 +67,13 @@ export default function Header() {
         </nav>
 
         <a
-          href="#cv"
+          href="#resume"
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
           Download CV
         </a>
 
-        <Button className="hidden lg:flex" href="#contact" white={false}>
+        <Button className="hidden lg:flex" href="#about" white={false}>
           Contact me
         </Button>
 
