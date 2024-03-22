@@ -1,7 +1,7 @@
 type Position = "left" | "right";
 
 export default function Brackets({
-  position,
+  position
 }: {
   position: Position;
 }) {
