@@ -50,7 +50,7 @@ export default function Hero() {
             TypeScript, and More
           </p>
 
-          <Button href="/projects" white>
+          <Button href="#projects" white>
             Take a look
           </Button>
         </div>
