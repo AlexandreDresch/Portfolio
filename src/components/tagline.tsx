@@ -1,7 +1,7 @@
 import Brackets from "../assets/svg/brackets";
 
 interface TaglineProps {
-  className: string;
+  className?: string;
   children: React.ReactNode;
 }
 
