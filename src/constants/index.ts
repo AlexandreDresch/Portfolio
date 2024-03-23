@@ -19,8 +19,8 @@ import redis from "../assets/languages/redis-plain-wordmark.svg";
 import postgresql from "../assets/languages/postgresql-plain-wordmark.svg";
 import nestjs from "../assets/languages/nestjs-plain-wordmark.svg";
 
-import icon1 from "../assets/projects/icon-1.svg";
-import icon2 from "../assets/projects/icon-2.svg";
+import icon1 from "../../public/assets/projects/icon-1.svg";
+import icon2 from "../../public/assets/projects/icon-2.svg";
 
 import brain from "../assets/brain.svg";
 import linkedin from "../assets/linkedin.svg";
@@ -88,7 +88,7 @@ export const projectsBackend = [
     id: "0",
     title: "Ask anything",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "./src/assets/projects/card-1.svg",
+    backgroundUrl: "./public/assets/projects/card-1.svg",
     iconUrl: icon1,
     light: true,
   },
@@ -96,21 +96,21 @@ export const projectsBackend = [
     id: "1",
     title: "Data Management System",
     text: "A robust system for managing and processing large volumes of data efficiently.",
-    backgroundUrl: "./src/assets/projects/card-2.svg",
+    backgroundUrl: "./public/assets/projects/card-2.svg",
     iconUrl: icon2,
   },
   {
     id: "2",
     title: "Authentication Service",
     text: "Secure authentication service for ensuring user identity and access control.",
-    backgroundUrl: "./src/assets/projects/card-3.svg",
+    backgroundUrl: "./public/assets/projects/card-3.svg",
     iconUrl: icon1,
   },
   {
     id: "3",
     title: "Real-time Analytics Engine",
     text: "Provides instant insights and analysis of data streams for informed decision-making.",
-    backgroundUrl: "./src/assets/projects/card-4.svg",
+    backgroundUrl: "./public/assets/projects/card-4.svg",
     iconUrl: icon2,
     light: true,
   },
@@ -118,14 +118,14 @@ export const projectsBackend = [
     id: "4",
     title: "Scalable API Gateway",
     text: "Efficiently manage and route API requests to backend services at scale.",
-    backgroundUrl: "./src/assets/projects/card-5.svg",
+    backgroundUrl: "./public/assets/projects/card-5.svg",
     iconUrl: icon1,
   },
   {
     id: "5",
     title: "Automated Testing Framework",
     text: "Streamlines the testing process, ensuring robustness and reliability of backend services.",
-    backgroundUrl: "./src/assets/projects/card-6.svg",
+    backgroundUrl: "./public/assets/projects/card-6.svg",
     iconUrl: icon2,
     light: true,
   },
