@@ -8,8 +8,8 @@ export default function BackendProjects() {
   return (
     <Section
       id="backend"
-      className="pt-[12rem] -mt-[5.25rem]"
-      crosses
+      className="pt-[6rem]"
+      crosses={false}
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings={false}
     >
@@ -20,7 +20,7 @@ export default function BackendProjects() {
         />
       </div>
 
-      <div className="flex justify-center flex-wrap gap-10 px-10 mb-10">
+      <div className="flex justify-center flex-wrap gap-10 px-5 mb-10">
         {projectsBackend.map((project) => (
           <div
             key={project.id}
@@ -30,7 +30,7 @@ export default function BackendProjects() {
             }}
           >
             <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem]">
-              <h5 className="h2 text-[1.75rem] mb-5">{project.title}</h5>
+              <h5 className="h2 text-[1.25rem] md:text-[1.75rem]  mb-5">{project.title}</h5>
               <p className="body-2 mb-6 text-n-3">{project.text}</p>
 
               <div className="flex items-center mt-auto">
