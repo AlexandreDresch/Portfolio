@@ -5,6 +5,7 @@ import BackendProjects from "./components/backend-projects";
 import About from "./components/about";
 import Resume from "./components/resume";
 import FrontendProjects from "./components/frontend-projects";
+import Footer from "./components/footer";
 
 export default function App() {
   return (
@@ -21,6 +22,8 @@ export default function App() {
         <About />
         <Resume />
       </div>
+
+      <Footer />
 
       <ButtonGradient />
     </>
