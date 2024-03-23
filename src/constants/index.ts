@@ -26,6 +26,8 @@ import brain from "../assets/brain.svg";
 import linkedin from "../assets/linkedin.svg";
 import github from "../assets/github.svg";
 
+import example from "../assets/hero/example.png";
+
 export const navigation = [
   {
     id: "0",
@@ -126,6 +128,42 @@ export const projectsBackend = [
     backgroundUrl: "./src/assets/projects/card-6.svg",
     iconUrl: icon2,
     light: true,
+  },
+];
+
+export const projectsFrontend = [
+  {
+    id: "0",
+    title: "Voice recognition",
+    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
+    date: "May 2023",
+    status: "done",
+    imageUrl: example,
+    colorful: true,
+  },
+  {
+    id: "1",
+    title: "Gamification",
+    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
+    date: "May 2023",
+    status: "progress",
+    imageUrl: example,
+  },
+  {
+    id: "2",
+    title: "Chatbot customization",
+    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
+    date: "May 2023",
+    status: "done",
+    imageUrl: example,
+  },
+  {
+    id: "3",
+    title: "Integration with APIs",
+    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
+    date: "May 2023",
+    status: "progress",
+    imageUrl: example,
   },
 ];
 
