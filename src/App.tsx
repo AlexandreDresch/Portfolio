@@ -4,6 +4,7 @@ import Hero from "./components/hero";
 import BackendProjects from "./components/backend-projects";
 import About from "./components/about";
 import Resume from "./components/resume";
+import FrontendProjects from "./components/frontend-projects";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Hero />
 
         <div id="projects">
+          <FrontendProjects />
           <BackendProjects />
         </div>
 
