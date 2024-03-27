@@ -22,6 +22,13 @@ import nestjs from "../assets/languages/nestjs-plain-wordmark.svg";
 import icon1 from "../../public/assets/projects/icon-1.svg";
 import icon2 from "../../public/assets/projects/icon-2.svg";
 
+import card1 from "../../public/assets/projects/card-1.svg";
+import card2 from "../../public/assets/projects/card-2.svg";
+import card3 from "../../public/assets/projects/card-3.svg";
+import card4 from "../../public/assets/projects/card-4.svg";
+import card5 from "../../public/assets/projects/card-5.svg";
+import card6 from "../../public/assets/projects/card-6.svg";
+
 import brain from "../assets/brain.svg";
 import linkedin from "../assets/linkedin.svg";
 import github from "../assets/github.svg";
@@ -88,7 +95,7 @@ export const projectsBackend = [
     id: "0",
     title: "Ask anything",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "./public/assets/projects/card-1.svg",
+    backgroundUrl: card1,
     iconUrl: icon1,
     light: true,
   },
@@ -96,21 +103,21 @@ export const projectsBackend = [
     id: "1",
     title: "Data Management System",
     text: "A robust system for managing and processing large volumes of data efficiently.",
-    backgroundUrl: "./public/assets/projects/card-2.svg",
+    backgroundUrl: card2,
     iconUrl: icon2,
   },
   {
     id: "2",
     title: "Authentication Service",
     text: "Secure authentication service for ensuring user identity and access control.",
-    backgroundUrl: "./public/assets/projects/card-3.svg",
+    backgroundUrl: card3,
     iconUrl: icon1,
   },
   {
     id: "3",
     title: "Real-time Analytics Engine",
     text: "Provides instant insights and analysis of data streams for informed decision-making.",
-    backgroundUrl: "./public/assets/projects/card-4.svg",
+    backgroundUrl: card4,
     iconUrl: icon2,
     light: true,
   },
@@ -118,14 +125,14 @@ export const projectsBackend = [
     id: "4",
     title: "Scalable API Gateway",
     text: "Efficiently manage and route API requests to backend services at scale.",
-    backgroundUrl: "./public/assets/projects/card-5.svg",
+    backgroundUrl: card5,
     iconUrl: icon1,
   },
   {
     id: "5",
     title: "Automated Testing Framework",
     text: "Streamlines the testing process, ensuring robustness and reliability of backend services.",
-    backgroundUrl: "./public/assets/projects/card-6.svg",
+    backgroundUrl: card6,
     iconUrl: icon2,
     light: true,
   },
