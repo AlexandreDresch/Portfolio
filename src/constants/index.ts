@@ -22,12 +22,12 @@ import nestjs from "../assets/languages/nestjs-plain-wordmark.svg";
 import icon1 from "../../public/assets/projects/icon-1.svg";
 import icon2 from "../../public/assets/projects/icon-2.svg";
 
-import card1 from "../../public/assets/projects/card-1.svg";
-import card2 from "../../public/assets/projects/card-2.svg";
-import card3 from "../../public/assets/projects/card-3.svg";
-import card4 from "../../public/assets/projects/card-4.svg";
-import card5 from "../../public/assets/projects/card-5.svg";
-import card6 from "../../public/assets/projects/card-6.svg";
+import card1 from "/assets/projects/card-1.svg";
+import card2 from "/assets/projects/card-2.svg";
+import card3 from "/assets/projects/card-3.svg";
+import card4 from "/assets/projects/card-4.svg";
+import card5 from "/assets/projects/card-5.svg";
+import card6 from "/assets/projects/card-6.svg";
 
 import brain from "../assets/brain.svg";
 import linkedin from "../assets/linkedin.svg";
