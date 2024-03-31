@@ -21,8 +21,8 @@ export default function Resume() {
             src={sphere}
             alt="Sphere"
             className="relative z-1"
-            width={255}
-            height={255}
+            width={225}
+            height={225}
           />
 
           <div className="absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2">
