@@ -19,8 +19,8 @@ import redis from "../assets/languages/redis-plain-wordmark.svg";
 import postgresql from "../assets/languages/postgresql-plain-wordmark.svg";
 import nestjs from "../assets/languages/nestjs-plain-wordmark.svg";
 
-import icon1 from "../../public/assets/projects/icon-1.svg";
-import icon2 from "../../public/assets/projects/icon-2.svg";
+import icon1 from "/assets/projects/icon-1.svg";
+import icon2 from "/assets/projects/icon-2.svg";
 
 import card1 from "/assets/projects/card-1.svg";
 import card2 from "/assets/projects/card-2.svg";
@@ -70,7 +70,32 @@ export const navigation = [
   },
 ];
 
-export const heroIcons = [homeSmile, file, search, plusSquare];
+export const heroContent = [
+  {
+    id: "0",
+    title: "Deploy",
+    url: "https://drive-emporium.vercel.app",
+    iconUrl: homeSmile,
+  },
+  {
+    id: "1",
+    title: "GitHub",
+    url: "https://github.com/AlexandreDresch/DriveEmporium",
+    iconUrl: file,
+  },
+  {
+    id: "2",
+    title: "GitHub Profile",
+    url: "https://www.github.com/AlexandreDresch",
+    iconUrl: search,
+  },
+  {
+    id: "3",
+    title: "GitHub Repositories",
+    url: "https://github.com/AlexandreDresch?tab=repositories",
+    iconUrl: plusSquare,
+  },
+];
 
 export const languages = [
   typescript,
@@ -90,51 +115,36 @@ export const languages = [
   threejs,
 ];
 
-export const projectsBackend = [
+export const projectsBackendAssets = [
   {
-    id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    id: 1,
     backgroundUrl: card1,
     iconUrl: icon1,
-    light: true,
   },
   {
-    id: "1",
-    title: "Data Management System",
-    text: "A robust system for managing and processing large volumes of data efficiently.",
+    id: 2,
     backgroundUrl: card2,
     iconUrl: icon2,
   },
   {
-    id: "2",
-    title: "Authentication Service",
-    text: "Secure authentication service for ensuring user identity and access control.",
+    id: 3,
     backgroundUrl: card3,
     iconUrl: icon1,
   },
   {
-    id: "3",
-    title: "Real-time Analytics Engine",
-    text: "Provides instant insights and analysis of data streams for informed decision-making.",
+    id: 4,
     backgroundUrl: card4,
     iconUrl: icon2,
-    light: true,
   },
   {
-    id: "4",
-    title: "Scalable API Gateway",
-    text: "Efficiently manage and route API requests to backend services at scale.",
+    id: 5,
     backgroundUrl: card5,
     iconUrl: icon1,
   },
   {
-    id: "5",
-    title: "Automated Testing Framework",
-    text: "Streamlines the testing process, ensuring robustness and reliability of backend services.",
+    id: 6,
     backgroundUrl: card6,
     iconUrl: icon2,
-    light: true,
   },
 ];
 
@@ -188,13 +198,13 @@ export const aboutContent = [
     id: "1",
     title: "LinkedIn",
     iconUrl: linkedin,
-    link: "https://www.linkedin.com/in/alexandre-dresch/"
+    link: "https://www.linkedin.com/in/alexandre-dresch/",
   },
   {
     id: "2",
     title: "GitHub",
     iconUrl: github,
-    link: "https://www.github.com/AlexandreDresch"
+    link: "https://www.github.com/AlexandreDresch",
   },
 ];
 
@@ -267,6 +277,7 @@ export const resume = [
       "Descrição de projetos, responsabilidades e realizações",
       "Onde estudei, o que estudei e em que intervalo de tempo",
     ],
+    resume: "../resume/AlexandreDreschPortugues.pdf"
   },
   {
     id: "1",
@@ -276,6 +287,7 @@ export const resume = [
       "Languages, frameworks, databases, tools, and practices",
       "Project descriptions, responsibilities, and achievements",
       "Where I studied, what I studied, and over what period of time",
-      ],
+    ],
+    resume: "../resume/AlexandreDreschEnglish.pdf"
   },
 ];
