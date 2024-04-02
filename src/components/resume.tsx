@@ -10,7 +10,7 @@ export default function Resume() {
   return (
     <Section
       id="resume"
-      className="pt-[12rem] overflow-hidden pb-20 md:pb-40"
+      className="pt-[8rem] md:pt-[12rem] overflow-hidden pb-20 md:pb-40"
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings

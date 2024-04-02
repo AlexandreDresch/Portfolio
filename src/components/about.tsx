@@ -15,7 +15,7 @@ export default function About() {
   return (
     <Section
       id="about"
-      className="pt-[12rem] -mt-[5.25rem]"
+      className="pt-[8rem] md:pt-[12rem] -mt-[5.25rem]"
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
