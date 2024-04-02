@@ -10,7 +10,7 @@ import exampleMobile from "../assets/hero/example-mobile.png";
 import background from "../assets/hero/background.png";
 import typescript from "../assets/languages/typescript-original.svg";
 
-import { heroIcons, languages } from "../constants";
+import { heroContent, languages } from "../constants";
 
 import { useWindowDimensions } from "../hooks/useWindowDimensions";
 import { useRef } from "react";
@@ -66,12 +66,22 @@ export default function Hero() {
                   width={1024}
                   height={490}
                 />
-                <ScrollParallax isAbsolutelyPositioned>
+                <ScrollParallax isAbsolutelyPositioned zIndex={100}>
                   <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] p-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
-                    {heroIcons.map((icon, index) => (
-                      <li className="p-5 cursor-pointer" key={index}>
-                        <img src={icon} width={24} height={25} alt="Icon" />
-                      </li>
+                    {heroContent.map((item) => (
+                      <a
+                        key={item.id}
+                        href={item.url}
+                        target="_blank"
+                        className="p-5 cursor-pointer"
+                      >
+                        <img
+                          src={item.iconUrl}
+                          width={24}
+                          height={25}
+                          alt={item.title}
+                        />
+                      </a>
                     ))}
                   </ul>
                 </ScrollParallax>
@@ -136,7 +146,10 @@ export default function Hero() {
 
           <ul className="flex">
             {languages.map((language, index) => (
-              <li className="flex items-center justify-center flex-1 h-[8.5rem]" key={index}>
+              <li
+                className="flex items-center justify-center flex-1 h-[8.5rem]"
+                key={index}
+              >
                 <img
                   src={language}
                   alt="Language"
