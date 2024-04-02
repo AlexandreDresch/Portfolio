@@ -15,9 +15,11 @@ export default function ResumeList() {
 
           <p className="body-2 min-h-[4rem] mb-3 text-n-1/50">{item.description}</p>
 
+          <a href={item.resume} download={`AlexandreDresch${item.title}.pdf`} target="_blank">
           <Button white className="w-full mb-6">
             Download
           </Button>
+          </a>
 
           <ul>
             {
