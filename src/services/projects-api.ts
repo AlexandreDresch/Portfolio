@@ -1,7 +1,7 @@
-import api from "./api";
+import { api } from "./api";
 
 export async function getProjects() {
-  const response = await api.get("/projects");
+  const { data: projects } = await api.from("Project").select();
 
-  return response.data;
+  return projects;
 }
