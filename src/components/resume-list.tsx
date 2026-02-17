@@ -4,11 +4,11 @@ import Button from "./button";
 import check from "../assets/check.svg";
 
 export default function ResumeList() {
-  const fileUrl = new URL(item.resume, window.location.origin).href;
-
   return (
     <div className="flex justify-center gap-[1.5rem] max-lg:flex-wrap">
       {resume.map((item) => (
+        const fileUrl = new URL(item.resume, window.location.origin).href;
+      
         <div
           key={item.id}
           className="w-[19rem] max-lg:w-full h-full px-6 bg-n-8 border border-n-6 rounded-[2rem] lg:w-auto py-14 [&>h4]:first:text-color-3 [&>h4]:even:text-color-1 hover:scale-105 transition-transform"
