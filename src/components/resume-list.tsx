@@ -4,6 +4,8 @@ import Button from "./button";
 import check from "../assets/check.svg";
 
 export default function ResumeList() {
+  const fileUrl = new URL(item.resume, window.location.origin).href;
+
   return (
     <div className="flex justify-center gap-[1.5rem] max-lg:flex-wrap">
       {resume.map((item) => (
@@ -15,7 +17,7 @@ export default function ResumeList() {
 
           <p className="body-2 min-h-[4rem] mb-3 text-n-1/50">{item.description}</p>
 
-          <a href={item.resume} download={`AlexandreDresch${item.title}.pdf`}>
+          <a href={fileUrl} download={`AlexandreDresch${item.title}.pdf`}>
           <Button white className="w-full mb-6">
             Download
           </Button>
