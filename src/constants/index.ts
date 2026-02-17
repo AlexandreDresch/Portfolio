@@ -277,7 +277,7 @@ export const resume = [
       "Descrição de projetos, responsabilidades e realizações",
       "Onde estudei, o que estudei e em que intervalo de tempo",
     ],
-    resume: "../resume/AlexandreDreschPortugues.pdf"
+    resume: "/resume/AlexandreDreschPortugues.pdf"
   },
   {
     id: "1",
@@ -288,6 +288,6 @@ export const resume = [
       "Project descriptions, responsibilities, and achievements",
       "Where I studied, what I studied, and over what period of time",
     ],
-    resume: "../resume/AlexandreDreschEnglish.pdf"
+    resume: "/resume/AlexandreDreschEnglish.pdf"
   },
 ];
